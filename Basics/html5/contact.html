@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Basics/css/reset.css">
+    <link rel="stylesheet" href="/Basics/html5/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/Basics/html5/">Homepage</a>
+          </li>
+          <li>
+            <a href="/Basics/html5/about.html">About me</a>
+          </li>
+          <li>
+            <a href="/Basics/html5/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Contact</h1>
+        <form id="contactForm" class="form" action="http://solchem.site/form.php" method="POST">
+          <label for="firstNameInput">
+            Imię: <input type="text" name="firstName" id="firstNameInput" />
+          </label>
+          <!-- dodanie dwóch dodatkowych inputów - text i mail dla lastName i userMail -->
+          <label for="lastNameInput">
+            Nazwisko: <input type="text" name="lastName" id="lastNameInput" />
+          </label>
+          <label for="userMailInput">
+            Email:
+            <input type="email" name="userMail" id="userMailInput" required />
+          </label>
+          <label for="checkboxInput1">
+            Czerwony
+            <input
+              type="checkbox"
+              name="col1"
+              id="checkboxInput1"
+              value="czerwony"
+            />
+          </label>
+          <div>
+            <label for="radio1">
+                Herbata
+                <input type="radio" name="napoj" id="radio1" value="herba" />
+              </label>
+              <label for="radio2">
+                Kawa <input type="radio" name="napoj" id="radio2" value="kawa" />
+              </label>
+          </div>
+          <input type="submit" value="Ognia!" />
+        </form>
+      </section>
+    </main>
+
+
+    <footer></footer>
+  </body>
+</html>
